@@ -151,6 +151,26 @@
   body {
     @apply font-body;
   }
+
+  span {
+    @apply inline-block;
+  }
+
+  [class~="bg-accent"] {
+    @apply text-light;
+  }
+}
+
+@layer components {
+  .logo {
+    --diameter: 2rem;
+    &::before {
+      @apply content-[''] inline-block w-[var(--diameter)] h-[var(--diameter)] rounded-full border;
+    }
+    &::after {
+      @apply content-[''] inline-block w-[var(--diameter)] h-[var(--diameter)] rounded-full bg-dark;
+    }
+  }
 }
 
 @layer components {

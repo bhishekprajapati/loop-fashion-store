@@ -16,6 +16,12 @@ export default {
       light: "#fff",
       red: "#FF4B4B",
     },
+    container: {
+      padding: {
+        DEFAULT: "1.5rem",
+        md: "0",
+      },
+    },
     extend: {},
   },
   plugins: [],
