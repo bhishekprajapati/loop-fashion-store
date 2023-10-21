@@ -19,10 +19,13 @@ export default {
     container: {
       padding: {
         DEFAULT: "1.5rem",
-        md: "0",
       },
     },
-    extend: {},
+    extend: {
+      animation: {
+        "spin-super-slow": "spin 30s linear reverse infinite",
+      },
+    },
   },
   plugins: [],
 };
