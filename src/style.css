@@ -198,3 +198,19 @@
     }
   }
 }
+
+@layer components {
+  @keyframes fashion {
+    from {
+      scale: 2;
+    }
+    to {
+      scale: 1;
+      transform: translateY(-25%);
+    }
+  }
+
+  .animate-fashion {
+    @apply animate-[fashion_1000ms_ease-in_forwards];
+  }
+}
