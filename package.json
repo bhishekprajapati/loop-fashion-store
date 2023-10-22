@@ -19,5 +19,8 @@
   },
   "browserslist": [
     ">0.1% and not dead"
-  ]
+  ],
+  "dependencies": {
+    "locomotive-scroll": "5.0.0-beta.8"
+  }
 }
