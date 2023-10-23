@@ -15,3 +15,9 @@ const locomotiveScroll = new LocomotiveScroll({
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   },
 });
+
+window.addEventListener("horizontalParallaxEvent", (e) => {
+  const { target, progress } = e.detail;
+  const translate = (1 - progress) * 150;
+  target.style.transform = `translateX(${translate}px)`;
+});
