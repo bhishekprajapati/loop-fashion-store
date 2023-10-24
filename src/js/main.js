@@ -1,6 +1,12 @@
 import "../locomotive.css";
 import LocomotiveScroll from "locomotive-scroll";
 
+function round(number, places = 2) {
+  const multiplier = Math.pow(10, places);
+  number *= multiplier;
+  return Math.floor(number) / multiplier;
+}
+
 const locomotiveScroll = new LocomotiveScroll({
   lenisOptions: {
     wrapper: window,
@@ -27,4 +33,11 @@ window.addEventListener("rotateEvent", (e) => {
   target.style.transform = `rotate(${
     progress * target.dataset.scrollRotateMax
   }deg)`;
+});
+
+window.addEventListener("gradientFillEvent", (e) => {
+  const { target, progress } = e.detail;
+  const targetPropName = target.dataset.scrollTargetProp;
+  const targetPropValue = round(progress * 100 * 2);
+  target.style.setProperty(`--${targetPropName}`, `${targetPropValue}%`);
 });
