@@ -38,6 +38,6 @@ window.addEventListener("rotateEvent", (e) => {
 window.addEventListener("gradientFillEvent", (e) => {
   const { target, progress } = e.detail;
   const targetPropName = target.dataset.scrollTargetProp;
-  const targetPropValue = round(progress * 100 * 2);
+  const targetPropValue = round(progress * 100 * 4);
   target.style.setProperty(`--${targetPropName}`, `${targetPropValue}%`);
 });
