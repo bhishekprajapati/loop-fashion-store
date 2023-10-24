@@ -24,5 +24,7 @@ window.addEventListener("horizontalParallaxEvent", (e) => {
 
 window.addEventListener("rotateEvent", (e) => {
   const { target, progress } = e.detail;
-  target.style.transform = `rotate(${progress * 90}deg)`;
+  target.style.transform = `rotate(${
+    progress * target.dataset.scrollRotateMax
+  }deg)`;
 });
