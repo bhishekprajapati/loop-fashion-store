@@ -21,3 +21,8 @@ window.addEventListener("horizontalParallaxEvent", (e) => {
   const translate = (1 - progress) * 150;
   target.style.transform = `translateX(${translate}px)`;
 });
+
+window.addEventListener("rotateEvent", (e) => {
+  const { target, progress } = e.detail;
+  target.style.transform = `rotate(${progress * 90}deg)`;
+});
