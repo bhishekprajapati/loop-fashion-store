@@ -1,5 +1,6 @@
 import "../locomotive.css";
 import LocomotiveScroll from "locomotive-scroll";
+import Home from "./Home";
 
 function round(number, places = 2) {
   const multiplier = Math.pow(10, places);
@@ -45,3 +46,7 @@ window.addEventListener("gradientFillEvent", (e) => {
 document
   .getElementById("scroll-to-top")
   .addEventListener("click", (e) => locomotiveScroll.scrollTo("body"));
+
+const { createApp, ref } = Vue;
+const app = createApp(Home);
+app.mount("#app");
