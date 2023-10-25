@@ -41,3 +41,7 @@ window.addEventListener("gradientFillEvent", (e) => {
   const targetPropValue = round(progress * 100 * 4);
   target.style.setProperty(`--${targetPropName}`, `${targetPropValue}%`);
 });
+
+document
+  .getElementById("scroll-to-top")
+  .addEventListener("click", (e) => locomotiveScroll.scrollTo("body"));
