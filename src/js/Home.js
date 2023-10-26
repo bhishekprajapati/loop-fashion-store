@@ -1,10 +1,12 @@
 import MarqueeOffers from "../components/MarqueeOffers";
 import CompanyLogoDisplay from "../components/CompanyLogoDisplay";
+import BrandDescription from "../components/BrandDescription";
 
 export default {
   components: {
     MarqueeOffers,
     CompanyLogoDisplay,
+    BrandDescription,
   },
   template: `
     <header>
@@ -13,6 +15,11 @@ export default {
     <main>
       <section class="container mx-auto select-none">
         <CompanyLogoDisplay />      
+      </section>
+
+      <section
+        class="container mx-auto text-center overflow-hidden py-[6.25rem] sm:py-[7rem] md:py-[8rem] lg:py-[9rem] xl:py-[11rem] my-[6rem]">
+        <BrandDescription />
       </section>
     </main>
   `,
