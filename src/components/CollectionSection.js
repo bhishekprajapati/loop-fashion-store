@@ -15,7 +15,7 @@ export default {
             data-scroll
             data-scroll-event-progress="gradientFillEvent"
             data-scroll-target-prop="tw-gradient-from-position"
-            class="relative text-transparent bg-clip-text bg-gradient-to-r from-accent from-0% to-[#313131] to-0% transition-colors duration-500">
+            class="relative text-transparent bg-clip-text bg-gradient-to-r from-accent from-0% to-[#a5a5a5] to-0% transition-colors duration-500">
             Our new collection
           </span>
           of sapphire necklaces
